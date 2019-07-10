@@ -32,7 +32,7 @@ global:
 ## Zookeeper cluster
 ##
 zookeeper:
-  name: zookeeper-REPLACE_ME
+  name: zookeeper-
   replicas: 3
   resources:
     cpu: 100m
@@ -43,8 +43,8 @@ zookeeper:
 ## Kafka Cluster
 ##
 kafka:
-  name: kafka-REPLACE_ME
-  replicas: 3
+  name: kafka-
+  replicas: 4
   resources:
     cpu: 100m
     memory: 512Mi
@@ -62,7 +62,7 @@ kafka:
 ## Connect Cluster
 ##
 connect:
-  name: connectors-REPLACE_ME
+  name: connectors-
   replicas: 2
   resources:
     cpu: 100m
@@ -90,7 +90,7 @@ connect:
 ## Replicator Connect Cluster
 ##
 replicator:
-  name: replicator-REPLACE_ME
+  name: replicator-
   replicas: 2
   resources:
     cpu: 100m
@@ -115,7 +115,7 @@ replicator:
 ## Schema Registry
 ##
 schemaregistry:
-  name: schemaregistry-REPLACE_ME
+  name: schemaregistry-
   resources:
     cpu: 100m
     memory: 512Mi
@@ -140,7 +140,7 @@ schemaregistry:
 ## KSQL
 ##
 ksql:
-  name: ksql-REPLACE_ME
+  name: ksql-
   replicas: 2
   resources:
     cpu: 200m
@@ -173,7 +173,7 @@ ksql:
 ## Control Center (C3) Resource configuration
 ##
 controlcenter:
-  name: controlcenter-REPLACE_ME
+  name: controlcenter-
   resources:
     cpu: 300m
     memory: 512Mi
