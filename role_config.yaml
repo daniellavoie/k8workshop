@@ -11,6 +11,134 @@ data:
       username: liko
       groups:
         - system:masters
+    - userarn: arn:aws:iam::829250931565:user/bextxebarria
+      username: bextxebarria
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/borja
+      username: borja
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/brice
+      username: brice
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/chris
+      username: chris
+      groups:
+        - system:masters
+     - userarn: arn:aws:iam::829250931565:user/davek
+      username: davek
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/earsy
+      username: earsy
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/elesh
+      username: elesh
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/eric.carlier
+      username: eric.carlier
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/hans
+      username: hans
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/hellmar
+      username: hellmar
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/jeffh
+      username: jeffh
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/kcheung
+      username: kcheung
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/ken
+      username: ken
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/lstoker
+      username: lstoker
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/markteehan
+      username: markteehan
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/mayur
+      username: mayur
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/mhussey
+      username: mhussey
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/mkieboom
+      username: mkieboom
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/nathan
+      username: nathan
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/PatrickDruley
+      username: PatrickDruley
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/petergustafsson
+      username: petergustafsson
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/pgodfrey
+      username: pgodfrey
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/pmac
+      username: pmac
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/pvantrepote
+      username: pvantrepote
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/skpabba
+      username: skpabba
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/sleigh
+      username: sleigh
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/Sudarshan
+      username: Sudarshan
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/timv
+      username: timv
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/tom
+      username: tom
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/vish
+      username: vish
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/wmac
+      username: wmac
+      groups:
+        - system:masters
+    - userarn: arn:aws:iam::829250931565:user/xper
+      username: xper
+      groups:
+        - system:masters
 kind: ConfigMap
 metadata:
   creationTimestamp: "2019-07-03T15:55:47Z"
