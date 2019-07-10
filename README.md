@@ -42,4 +42,34 @@
 ## Look at Services
 `kubectl -n REPLACE_THIS get services -o wide`
 
+## Deploy Connect
+
+`helm install -f ./providers/REPLACE_THIS.yaml --name connect-REPLACE_THIS  --namespace REPLACE_THIS --set connect.enabled=true ./confluent-operator`
+
+## Deploy Schema Registry
+
+`helm install -f ./providers/REPLACE_THIS.yaml --name schemaregistry-REPLACE_THIS  --namespace REPLACE_THIS --set schemaregistry.enabled=true ./confluent-operator`
+
+## Deploy KSQL
+
+`helm install -f ./providers/REPLACE_THIS.yaml --name ksql-REPLACE_THIS  --namespace REPLACE_THIS --set ksql.enabled=true ./confluent-operator`
+
+## Deploy C3
+
+`helm install -f ./providers/REPLACE_THIS.yaml --name controlcenter-REPLACE_THIS  --namespace REPLACE_THIS --set controlcenter.enabled=true ./confluent-operator`
+
+## Scale Kafka
+
+`kubectl edit kafka-REPLACE_THIS kafka-REPLACE_THIS -n REPLACE_THIS`
+
+Change the replicas value to 4 and save!
+
+## Look at new node!
+
+`kubectl -n REPLACE_THIS get pods -o wide | grep kafka`
+
+
+
+
+
 
