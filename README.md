@@ -1,4 +1,4 @@
-# k8workshop
+# Confluent k8s Workshop for SE Team
 
 
 
