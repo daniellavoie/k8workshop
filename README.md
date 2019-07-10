@@ -4,7 +4,7 @@
 
 Set KubeConfig from eks cluster
 
-`aws eks --region us-west-2 update-kubeconfig --name se-workshop`
+`aws eks --region us-west-2 update-kubeconfig --name seworkshop`
 
 Test Config
 
