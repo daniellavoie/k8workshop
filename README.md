@@ -32,12 +32,13 @@
 `helm install -f ./providers/<REPLACE_THIS>.yaml --name zookeeper-<REPLACE_THIS>  --namespace <REPLACE_THIS> --set zookeeper.enabled=true ./confluent-operator`
 
 ## Check deployment
-`kubectl -n <REPLACE_THIS> get pods
+`kubectl -n <REPLACE_THIS> get pods -o wide`
 
 ## Deploy Kafka
 
 `helm install -f ./providers/<REPLACE_THIS>.yaml --name kafka-<REPLACE_THIS>  --namespace <REPLACE_THIS> --set kafka.enabled=true ./confluent-operator`
 
 ## Look at Services
+`kubectl -n <REPLACE_THIS> get services -o wide`
 
 
