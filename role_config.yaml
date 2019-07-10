@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::829250931565:role/eksctl-cliff-eks-test-nodegroup-s-NodeInstanceRole-28LF9JQZ3764
+      username: system:node:{{EC2PrivateDNSName}
+      groups:
+        - system:bootstrappers
+        - system:nodes
+  mapUsers: |
+    - userarn: arn:aws:iam::829250931565:user/liko
+      username: liko
+      groups:
+        - system:masters
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2019-07-03T15:55:47Z"
+  name: aws-auth
+  namespace: kube-system
+  resourceVersion: "1140025"
+  selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
+  uid: 05a6fb0e-9dab-11e9-ad68-06cce4c11dfc
