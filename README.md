@@ -24,7 +24,7 @@
 `chmod 777 build_yaml.sh`
 
 ## Substitute your first initial last name whever you see REPLACE THIS below, ex: cgilmore
-## build_yaml will update your readme in k8workshop directory if you want to copy paste from there after this command
+NOTE: build_yaml will update your readme in k8workshop directory if you want to copy paste from there after this command
 
 `./build_yaml.sh REPLACE_THIS`
 
