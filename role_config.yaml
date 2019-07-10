@@ -27,7 +27,7 @@ data:
       username: chris
       groups:
         - system:masters
-     - userarn: arn:aws:iam::829250931565:user/davek
+    - userarn: arn:aws:iam::829250931565:user/davek
       username: davek
       groups:
         - system:masters
