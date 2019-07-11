@@ -82,11 +82,11 @@ connect:
     domain: "selabs.net"
   dependencies:
     kafka:
-      bootstrapEndpoint: kafka:9071
+      bootstrapEndpoint: kafka-REPLACE_ME:9071
       brokerCount: 3
     schemaRegistry:
       enabled: true
-      url: http://schemaregistry:8081
+      url: http://schemaregistry-REPLACE_ME:8081
 ## Replicator Connect Cluster
 ##
 replicator:
@@ -110,7 +110,7 @@ replicator:
   dependencies:
     kafka:
       brokerCount: 3
-      bootstrapEndpoint: kafka:9071
+      bootstrapEndpoint: kafka-REPLACE_ME:9071
 ##
 ## Schema Registry
 ##
@@ -134,7 +134,7 @@ schemaregistry:
   dependencies:
     kafka:
       brokerCount: 3
-      bootstrapEndpoint: kafka:9071
+      bootstrapEndpoint: kafka-REPLACE_ME:9071
 
 ##
 ## KSQL
@@ -160,15 +160,15 @@ ksql:
   dependencies:
     kafka:
       brokerCount: 3
-      bootstrapEndpoint: kafka:9071
-      brokerEndpoints: kafka-0.kafka:9071,kafka-1.kafka:9071,kafka-2.kafka:9071
+      bootstrapEndpoint: kafka-REPLACE_ME:9071
+      brokerEndpoints: kafka-REPLACE_ME-0.kafka-REPLACE_ME:9071,kafka-REPLACE_ME-1.kafka-REPLACE_ME:9071,kafka-REPLACE_ME-2.kafka-REPLACE_ME:9071
     schemaRegistry:
       enabled: false
       tls:
         enabled: false
         authentication:
           type: ""
-      url: http://schemaregistry:8081
+      url: http://schemaregistry-REPLACE_ME:8081
 
 ## Control Center (C3) Resource configuration
 ##
@@ -186,18 +186,18 @@ controlcenter:
   dependencies:
     c3KafkaCluster:
       brokerCount: 3
-      bootstrapEndpoint: kafka:9071
+      bootstrapEndpoint: kafka-REPLACE_ME:9071
       zookeeper:
-        endpoint: zookeeper:2181
+        endpoint: zookeeper-REPLACE_ME:2181
     connectCluster:
       enabled: true
-      url: http://connectors:8083
+      url: http://connectors-REPLACE_ME:8083
     ksql:
       enabled: true
-      url: http://ksql:9088
+      url: http://ksql-REPLACE_ME:9088
     schemaRegistry:
       enabled: true
-      url: http://schemaregistry:8081
+      url: http://schemaregistry-REPLACE_ME:8081
   ##
   ## C3 External Access
   ##
