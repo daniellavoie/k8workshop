@@ -60,7 +60,7 @@ NOTE: build_yaml will update your readme in k8workshop directory if you want to 
 
 ## Scale Kafka
 
-`kubectl edit kafka-REPLACE_THIS kafka-REPLACE_THIS -n REPLACE_THIS`
+`kubectl edit kafka kafka-REPLACE_THIS -n REPLACE_THIS`
 
 Change the replicas value to 4 and save!
 
