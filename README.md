@@ -71,12 +71,12 @@ Change the replicas value to 4 and save!
 ## Clean up!
 
 ```
-helm delete --destroy controlcenter-REPLACE_THIS
-helm delete --destroy ksql-REPLACE_THIS
-helm delete --destroy schemaregistry-REPLACE_THIS
-helm delete --destroy connect-REPLACE_THIS
-helm delete --destroy kafka-REPLACE_THIS
-helm delete --destroy zookeeper-REPLACE_THIS
+helm delete --purge controlcenter-REPLACE_THIS
+helm delete --purge ksql-REPLACE_THIS
+helm delete --purge schemaregistry-REPLACE_THIS
+helm delete --purge connect-REPLACE_THIS
+helm delete --purge kafka-REPLACE_THIS
+helm delete --purge zookeeper-REPLACE_THIS
 ```
 
 
