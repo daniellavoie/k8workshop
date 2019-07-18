@@ -51,8 +51,8 @@ kafka:
   jvmConfig:
     heapSize: 256M
   loadBalancer:
-    enabled: true
-    domain: "selabs.net"
+    enabled: false
+    domain: ""
   tls:
     enabled: false
     fullchain: |-
@@ -78,8 +78,8 @@ connect:
     privkey: |-
     cacerts: |-
   loadBalancer:
-    enabled: true
-    domain: "selabs.net"
+    enabled: false
+    domain: ""
   dependencies:
     kafka:
       bootstrapEndpoint: kafka-REPLACE_ME:9071
@@ -105,8 +105,8 @@ replicator:
     privkey: |-
     cacerts: |-
   loadBalancer:
-    enabled: true 
-    domain: "selabs.net"
+    enabled: false 
+    domain: ""
   dependencies:
     kafka:
       brokerCount: 3
@@ -129,8 +129,8 @@ schemaregistry:
     privkey: |-
     cacerts: |-
   loadBalancer:
-    enabled: true 
-    domain: "selabs.net"
+    enabled: false 
+    domain: ""
   dependencies:
     kafka:
       brokerCount: 3
@@ -155,8 +155,8 @@ ksql:
     privkey: |-
     cacerts: |-
   loadBalancer:
-    enabled: true
-    domain: "selabs.net"
+    enabled: false
+    domain: ""
   dependencies:
     kafka:
       brokerCount: 3
