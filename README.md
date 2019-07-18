@@ -26,57 +26,60 @@
 ## Substitute your first initial last name whever you see REPLACE THIS below, ex: cgilmore
 NOTE: build_yaml will update your readme in k8workshop directory if you want to copy paste from there after this command
 
-`./build_yaml.sh REPLACE_THIS`
+```plain
+export INITIALS=REPLACE_THIS
+./build_yaml.sh $REPLACE_THIS
+```
 
 ## Deploy Zookeeper
 
-`helm install -f ./providers/REPLACE_THIS.yaml --name zookeeper-REPLACE_THIS  --namespace REPLACE_THIS --set zookeeper.enabled=true ./confluent-operator`
+`helm install -f ./providers/$INITIALS.yaml --name zookeeper-$INITIALS  --namespace $INITIALS --set zookeeper.enabled=true ./confluent-operator`
 
 ## Check deployment
-`kubectl -n REPLACE_THIS get pods -o wide`
+`kubectl -n $INITIALS get pods -o wide`
 
 ## Deploy Kafka
 
-`helm install -f ./providers/REPLACE_THIS.yaml --name kafka-REPLACE_THIS  --namespace REPLACE_THIS --set kafka.enabled=true ./confluent-operator`
+`helm install -f ./providers/$INITIALS.yaml --name kafka-$INITIALS  --namespace $INITIALS --set kafka.enabled=true ./confluent-operator`
 
 ## Look at Services
-`kubectl -n REPLACE_THIS get services -o wide`
+`kubectl -n $INITIALS get services -o wide`
 
 ## Deploy Connect
 
-`helm install -f ./providers/REPLACE_THIS.yaml --name connect-REPLACE_THIS  --namespace REPLACE_THIS --set connect.enabled=true ./confluent-operator`
+`helm install -f ./providers/$INITIALS.yaml --name connect-$INITIALS  --namespace $INITIALS --set connect.enabled=true ./confluent-operator`
 
 ## Deploy Schema Registry
 
-`helm install -f ./providers/REPLACE_THIS.yaml --name schemaregistry-REPLACE_THIS  --namespace REPLACE_THIS --set schemaregistry.enabled=true ./confluent-operator`
+`helm install -f ./providers/$INITIALS.yaml --name schemaregistry-$INITIALS  --namespace $INITIALS --set schemaregistry.enabled=true ./confluent-operator`
 
 ## Deploy KSQL
 
-`helm install -f ./providers/REPLACE_THIS.yaml --name ksql-REPLACE_THIS  --namespace REPLACE_THIS --set ksql.enabled=true ./confluent-operator`
+`helm install -f ./providers/$INITIALS.yaml --name ksql-$INITIALS  --namespace $INITIALS --set ksql.enabled=true ./confluent-operator`
 
 ## Deploy C3
 
-`helm install -f ./providers/REPLACE_THIS.yaml --name controlcenter-REPLACE_THIS  --namespace REPLACE_THIS --set controlcenter.enabled=true ./confluent-operator`
+`helm install -f ./providers/$INITIALS.yaml --name controlcenter-$INITIALS  --namespace $INITIALS --set controlcenter.enabled=true ./confluent-operator`
 
 ## Scale Kafka
 
-`kubectl edit kafka kafka-REPLACE_THIS -n REPLACE_THIS`
+`kubectl edit kafka kafka-$INITIALS -n $INITIALS`
 
 Change the replicas value to 4 and save!
 
 ## Look at new node!
 
-`kubectl -n REPLACE_THIS get pods -o wide | grep kafka`
+`kubectl -n $INITIALS get pods -o wide | grep kafka`
 
 ## Clean up!
 
 ```
-helm delete --purge controlcenter-REPLACE_THIS
-helm delete --purge ksql-REPLACE_THIS
-helm delete --purge schemaregistry-REPLACE_THIS
-helm delete --purge connect-REPLACE_THIS
-helm delete --purge kafka-REPLACE_THIS
-helm delete --purge zookeeper-REPLACE_THIS
+helm delete --purge controlcenter-$INITIALS
+helm delete --purge ksql-$INITIALS
+helm delete --purge schemaregistry-$INITIALS
+helm delete --purge connect-$INITIALS
+helm delete --purge kafka-$INITIALS
+helm delete --purge zookeeper-$INITIALS
 ```
 
 
