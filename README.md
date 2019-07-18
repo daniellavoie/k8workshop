@@ -68,6 +68,18 @@ Change the replicas value to 4 and save!
 
 `kubectl -n REPLACE_THIS get pods -o wide | grep kafka`
 
+## Clean up!
+
+```
+helm delete --destroy controlcenter-REPLACE_THIS
+helm delete --destroy ksql-REPLACE_THIS
+helm delete --destroy schemaregistry-REPLACE_THIS
+helm delete --destroy connect-REPLACE_THIS
+helm delete --destroy kafka-REPLACE_THIS
+helm delete --destroy zookeeper-REPLACE_THIS
+```
+
+
 
 
 
